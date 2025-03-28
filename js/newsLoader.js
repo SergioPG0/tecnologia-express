@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('../data/news.json')
+  fetch('data/news.json')
       .then(response => {
           // Verificar si la respuesta HTTP es exitosa
           if (!response.ok) {
