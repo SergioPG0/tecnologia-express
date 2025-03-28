@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Mi Sitio Web</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Incluir Leaflet CSS para el mapa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <!-- CSS adicional para el mapa -->
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html"><img id="Logotipo" src="../Images/Logotipo.jpg" alt="Logotipo" height="221" width="250"></a>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li class="active"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="contacto">
+      <h1>Contacto</h1>
+      <!-- Contenedor para el mapa dinámico -->
+      <div id="map"></div>
+      <div class="contact-info">
+        <h2>Datos de la Empresa</h2>
+        <p>Dirección: Calle Ejemplo 123, Ciudad, País.</p>
+        <p>Teléfono: +34 123 456 789</p>
+        <p>Email: info@misitioweb.com</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/?locale=es_ES"><img id="Face" src="../Images/Facebook.jpg" alt="Facebook" height="626" width="626"></a>
+      <a href="https://x.com/?lang=es&mx=2"><img id="Twitt" src="../Images/Twitter.jpg" alt="Twitter" height="626" width="626"></a>
+      <a href="https://www.instagram.com/"><img id="Inst" src="../Images/Instagram.jpg" alt="Instagram" height="626" width="626"></a>
+    </div>
+    <address>Dirección de la empresa: Calle Ejemplo 123, Ciudad, País.</address>
+    <p>Aviso legal: &copy; 2025 Mi Sitio Web.</p>
+  </footer>
+  <!-- Incluir Leaflet JS y el plugin de enrutamiento -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"/>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <!-- Se carga el script externo para la funcionalidad del mapa -->
+  <script src="../js/map.js"></script>
+</body>
+</html>

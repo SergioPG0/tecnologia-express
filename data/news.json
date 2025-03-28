@@ -1,0 +1,16 @@
+{
+  "noticias": [
+      {
+          "titulo": "Novedades a tener en cuenta ",
+          "contenido": "Tenemos en cuenta que las proximas actualizaciones de productos ampliaran por completo las necesidades de los usuarios,perifericos usuales tales como teclados y ratones son algunas de las novedades que llegaran pronto."
+      },
+      {
+          "titulo": "Ampliar contenidos",
+          "contenido": "Como ya sabeis, al ser una empresa humilde apenas tenemos un producto de cada tipo, haciendo complicado las distintas variaciones de precio, gamas y otros motivos que no ayuda a la experiencia."
+      },
+      {
+          "titulo": "Descuentos",
+          "contenido": "Estos descuentos llegaran lo antes posible, sabemos que algunos se han llegado a quejar por los altos precios que hay en nuestra tienda y queremos hacer un esfuerzo por vosotros."
+      }
+  ]
+}

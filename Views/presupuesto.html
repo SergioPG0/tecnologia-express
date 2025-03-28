@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presupuesto - Mi Sitio Web</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html"><img id="Logotipo" src="../Images/Logotipo.jpg" alt="Logotipo" height="221" width="250"></a>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li class="active"><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="presupuesto-form">
+      <h1>Formulario de Presupuesto</h1>
+      <form id="budgetForm" novalidate>
+        <!-- Datos de contacto -->
+        <fieldset>
+          <legend>Datos de Contacto</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" maxlength="15" required pattern="[A-Za-zÀ-ÿ\s]+">
+          <br>
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" maxlength="40" required pattern="[A-Za-zÀ-ÿ\s]+">
+          <br>
+          <label for="telefono">Teléfono de contacto:</label>
+          <input type="text" id="telefono" name="telefono" maxlength="9" required pattern="[0-9]+">
+          <br>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+        <!-- Presupuesto -->
+        <fieldset>
+          <legend>Presupuesto</legend>
+          <label>Producto:</label><br>
+          <input type="radio" id="producto1" name="producto" value="producto1" data-price="100" required>
+          <label for="producto1">Producto 1 - 100€</label><br>
+          <input type="radio" id="producto2" name="producto" value="producto2" data-price="150">
+          <label for="producto2">Producto 2 - 150€</label><br>
+          <input type="radio" id="producto3" name="producto" value="producto3" data-price="200">
+          <label for="producto3">Producto 3 - 200€</label><br><br>
+          
+          <label for="plazo">Plazo (meses):</label>
+          <input type="number" id="plazo" name="plazo" min="1" value="1" required>
+          <br><br>
+          
+          <label>Extras:</label><br>
+          <input type="checkbox" id="extra1" name="extras" value="20" data-extra="20">
+          <label for="extra1">Extra 1 - 20€</label><br>
+          <input type="checkbox" id="extra2" name="extras" value="30" data-extra="30">
+          <label for="extra2">Extra 2 - 30€</label><br>
+          <input type="checkbox" id="extra3" name="extras" value="50" data-extra="50">
+          <label for="extra3">Extra 3 - 50€</label><br><br>
+          
+          <label for="total">Presupuesto Final:</label>
+          <input type="text" id="total" name="total" readonly value="0€">
+          <br><br>
+          
+          <label>
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            Acepto las condiciones de privacidad
+          </label>
+          <br><br>
+          
+          <button type="submit">Enviar</button>
+          <button type="reset">Resetear</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/?locale=es_ES"><img id="Face" src="../Images/Facebook.jpg" alt="Facebook" height="626" width="626"></a>
+      <a href="https://x.com/?lang=es&mx=2"><img id="Twitt" src="../Images/Twitter.jpg" alt="Twitter" height="626" width="626"></a>
+      <a href="https://www.instagram.com/"><img id="Inst" src="../Images/Instagram.jpg" alt="Instagram" height="626" width="626"></a>
+    </div>
+    <address>Dirección de la empresa: Calle Ejemplo 123, Ciudad, País.</address>
+    <p>Aviso legal: &copy; 2025 Mi Sitio Web.</p>
+  </footer>
+  <!-- Se carga el script externo para el cálculo y validación del presupuesto -->
+  <script src="../js/budget.js"></script>
+</body>
+</html>
